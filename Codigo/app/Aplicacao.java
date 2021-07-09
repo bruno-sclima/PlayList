@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.util.List;
+import business.*;
 
 public class Aplicacao {
 
@@ -27,7 +28,7 @@ public class Aplicacao {
 		List<ItemPlaylist> ip = pl.getItens();
 		ip.forEach((f) -> System.out.println(f.toString()));
 		
-		System.out.println("\nDuração Média: " + pl.duracaoMedia());
+		System.out.println("\nDuraÃ§Ã£o MÃ©dia: " + pl.duracaoMedia());
 		System.out.println("Musicas do "+ a.getNomeArt());
 		List<Musica> musicas = pl.getMusArtista(a);
 		musicas.forEach((f) -> System.out.println(f.toString()));
